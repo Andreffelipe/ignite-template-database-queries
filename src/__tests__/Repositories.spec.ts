@@ -47,6 +47,7 @@ const gamesSeed: Pick<Game, 'title'>[] = [
 ];
 
 describe('Repositories', () => {
+  jest.setTimeout(50000)
   let connection: Connection;
 
   let ormUsersRepository: Repository<User>;
